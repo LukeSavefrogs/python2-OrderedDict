@@ -84,10 +84,10 @@ class OrderedDict:
         true = 1 == 1     # Fix for Python v. < 2.3
         false = 1 == 0    # Fix for Python v. < 2.3
 
-        if isinstance(other, OrderedDict):
-            print("Comparing the same object...")
-        else: 
-            print("Comparing two different objects...")
+        # if isinstance(other, OrderedDict):
+        #     print("Comparing the same object...")
+        # else: 
+        #     print("Comparing two different objects...")
 
         if len(self) != len(other):
             return false
