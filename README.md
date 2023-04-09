@@ -7,17 +7,24 @@
 # OrderedDictionary
 Backporting of the `OrderedDict` class from the `collection` package that can be used in **legacy Python 2** scripts (_tested on Python 2.1_).
 
+## What is an `OrderedDict`?
+Quoting from [RealPython's tutorial](https://realpython.com/python-ordereddict/):
+> Python’s `OrderedDict` is a `dict` subclass that **preserves the order** in which key-value pairs, commonly known as items, are **inserted into the dictionary**. 
+> - When you iterate over an OrderedDict object, items are traversed in the original order. 
+> - If you update the value of an existing key, then the order remains unchanged. 
+> - If you remove an item and reinsert it, then the item is added at the end of the dictionary.
 
 ## Roadmap
-- [X] Implement `.clear()`
-- [X] Implement `.copy()`
-- [ ] Implement `.get()`
-- [ ] Implement `.update()`
-- [ ] Implement `.setdefault()`
-- [ ] Implement `.pop()`
-- [ ] Implement `.popitem()`
-- [ ] Implement `.move_to_end(key, last)`
-- [ ] Implement `.fromkeys(keylist, value)`
+Since `OrderedDict` is a `dict` subclass. we need to implement all dictionary methods:
+- [X] `.clear()`
+- [X] `.copy()`
+- [ ] `.get(key, default)`
+- [ ] `.update(object)`
+- [ ] `.setdefault(key, default)`
+- [ ] `.pop(key, default)`
+- [ ] `.popitem()`
+- [ ] `.move_to_end(key, last)`
+- [ ] `.fromkeys(keylist, value)`
 
 
 ## Special thanks
