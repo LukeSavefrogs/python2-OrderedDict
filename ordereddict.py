@@ -1,11 +1,4 @@
-"""
-Drop-in replacement for the Python 2.7 OrderedDict class.
-
-https://github.com/amina196/OrderedDictionary
-
-See also:
-- https://github.com/sprintly/ordereddict
-"""
+""" Drop-in replacement for the Python 2.7 OrderedDict class. """
 
 class OrderedDict:
     def __init__(self, d={}, **data):
