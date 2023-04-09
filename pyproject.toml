@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "python2-ordereddict"
+version = "0.1.0"
+description = "Drop-in replacement for the Python 2.7 OrderedDict class that supports legacy Python versions down to 2.1"
+authors = ["Luca Salvarani <lucasalvarani99@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "ordereddict.py", from = "." }]
+
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+vermin = "^1.5.1"
+poethepoet = "^0.19.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+
+[tool.poe.tasks]
+test = "python -m unittest discover --failfast --catch --verbose"
