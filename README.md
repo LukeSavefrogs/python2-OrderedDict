@@ -1,3 +1,9 @@
+![Python version](https://img.shields.io/static/v1?label=python&message=>%3D2.1&color=informational&style=for-the-badge)
+[![License](https://img.shields.io/github/license/LukeSavefrogs/python21-OrderedDict?color=green&style=for-the-badge)](https://github.com/LukeSavefrogs/python21-OrderedDict/blob/master/LICENSE)
+
+[![Run tests](https://github.com/LukeSavefrogs/python21-OrderedDict/actions/workflows/run-tests.yml/badge.svg)](https://github.com/LukeSavefrogs/python21-OrderedDict/actions/workflows/run-tests.yml)
+[![Open issues](https://img.shields.io/github/issues-raw/LukeSavefrogs/python21-OrderedDict?color=yellow)](https://github.com/LukeSavefrogs/python21-OrderedDict/issues?q=is%3Aissue+is%3Aopen+)
+
 # OrderedDictionary
 Backporting of the `OrderedDict` class from the `collection` package that can be used in **legacy Python 2** scripts (_tested on Python 2.1_).
 
